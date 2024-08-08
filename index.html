@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop Registration Form</title>
+    <style>
+        body {
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Workshop Registration Form</h1></center>
+    <form action="login.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+
+
+        <label for="phno">Contact no:</label>
+        <input type="text" id="phno" name="phno"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30"></textarea><br><br>
+
+        <label for="courses">Select Your Course</label><br>
+        <input list="courses" name="course" id="courses">
+        <datalist id="courses">
+            <option value="BTECH">
+            <option value="MTECH">
+            <option value="Others">
+        </datalist><br>
+
+        <h2>Select Your Branch</h2>
+        
+        
+        <input type="radio" id="branch2" name="branch" value="electronics">
+        <label for="branch2">EC</label><br>
+        <input type="radio" id="branch4" name="branch" value="civil">
+        <label for="branch4">CE</label><br>
+        <input type="radio" id="branch1" name="branch" value="computer science">
+        <label for="branch1">CSD</label><br>
+         <input type="radio" id="branch3" name="branch" value="applied electronics">
+        <label for="branch3">AE</label><br>
+
+        <h2>Select Year</h2>
+        <select name="year">
+            <option value="first year">1st year</option>
+            <option value="second year">2nd year</option>
+            <option value="third year">3rd year</option>
+            <option value="fourth year">4th year</option>
+        </select><br>
+
+        <label for="cgpa">CGPA</label><br>
+        <input type="range" id="cgpa" name="cgpa"><br>
+
+        <h3>Select Your Domains</h3>
+        <input type="checkbox" id="dom1" name="domain" value="AI">
+        <label for="dom1">AI</label><br>
+        <input type="checkbox" id="dom2" name="domain" value="Cyber security">
+        <label for="dom2">Cyber security</label><br>
+        <input type="checkbox" id="dom3" name="domain" value="Python">
+        <label for="dom3">Python</label><br>
+        <input type="checkbox" id="dom4" name="domain" value="Machine Learning">
+        <label for="dom4">Machine Learning</label><br>
+        <input type="checkbox" id="dom5" name="domain" value="Data science">
+        <label for="dom5">Data science</label><br>
+
+        <h3>Upload Your Photo</h3>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
